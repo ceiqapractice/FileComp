@@ -2,9 +2,17 @@
 
 ## Step 1: Install Required Packages
 
+1. Clone the repo using below URL
+
 ```bash
 npm i
 ```
+2. Navigate to folder and install npm packages using:
+
+```sh
+npm install
+```
+
 
 ## Step 2: Update Your Test Script
 
