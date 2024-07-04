@@ -3,7 +3,7 @@
 ## Step 1: Install Required Packages
 
 ```bash
-npm install sharp
+npm i
 ```
 
 ## Step 2: Update Your Test Script
