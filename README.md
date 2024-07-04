@@ -5,7 +5,7 @@
 1. Clone the repo using below URL
 
 ```bash
-npm i
+https://github.com/ceiqapractice/FileComp.git
 ```
 2. Navigate to folder and install npm packages using:
 
