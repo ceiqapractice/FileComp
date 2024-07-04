@@ -1,14 +1,22 @@
-# FileComp
+#  FileComp
 
-Step 1: Install Required Packages
+Foobar is a Python library for dealing with word pluralization.
 
+## Step 1: Install Required Packages
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
 npm install sharp
+```
 
-Step 2: Update Your Test Script
+## Step 2: Update Your Test Script
+
 Here’s how you can update your script to perform manual pixel comparison:
 
 findPartialImage.test.js
 
+```js
 const { test, expect } = require('@playwright/test');
 const path = require('path');
 const sharp = require('sharp');
@@ -81,26 +89,17 @@ test('Find Partial Image in Screenshot', async ({ page }) => {
   expect(partialImageFound).toBeTruthy();
 });
 
+```
 
-Explanation
+## Explanation
+
 Buffer Handling: Use sharp to read images into buffers (screenshot and partialImage).
 Manual Pixel Comparison: Loop through each possible position in the screenshot to compare it with the partial image.
 Calculate mismatched pixels based on RGBA values and compare against a threshold.
 Threshold: Adjust the threshold parameter (between 0 and 1) to control the sensitivity of the comparison. Lower values increase sensitivity.
 
-Steps to Take
-Update Your Project:
-
-Replace your existing findPartialImage.test.js with the updated script above.
-Run Your Tests:
-
 Navigate to your project directory in the terminal.
 
-Run the Playwright test suite:
-
-bash
-Copy code
+```bash
 npx playwright test
-Verify Output:
-
-Check the console output for logs indicating whether the partial image was found or not.
+```
