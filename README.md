@@ -1,10 +1,6 @@
 #  FileComp
 
-Foobar is a Python library for dealing with word pluralization.
-
 ## Step 1: Install Required Packages
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 
 ```bash
 npm install sharp
